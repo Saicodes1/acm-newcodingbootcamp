@@ -1,0 +1,67 @@
+site_name: ML Workshop
+remote_branch: gh-pages
+site_url: https://riyanbhargava.github.io/acm-ml-workshop
+site_author: ACM BPDC
+site_description: A template site, replace this with the actual description
+repo_url: https://github.com/RiyanBhargava/acm-ml-workshop
+repo_name: RiyanBhargava/acm-ml-workshop
+
+copyright: Copyright &copy; 2024 - ACM BITS Pilani Dubai Campus
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/ACM_Logo.png
+  favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - header.autohide
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/acmbpdc
+    - icon: fontawesome/brands/github 
+      link: https://github.com/acmbpdc
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/DYQdxquYwP
+
+# Use the below section for more specific control
+nav:
+  - Home: index.md
+  - Data Cleaning and Feature Engineering: day1/day1.md
+  - Model Training and Analysis: day2/day2.md
+  - Deep Learning & NLP: day3/day3.md
+  - DL with CNN and Image Detection: day4/day4.md
+
+markdown_extensions:
+  - toc:
+      permalink: True
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - mkdocs-jupyter
